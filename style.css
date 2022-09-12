@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* resets */
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+}
+
+.title {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.box {
+  width: 348px;
+  padding: 32px 0;
+}
+
+.box-row,
+.box {
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 2px 1px #00000033;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.08px;
+}
+
+.text {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15.08px;
+}
+
+.text-2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.6px;
+}
+
+.text-3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.11px;
+}
+/* container */
+
+.container {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: 'column row  ';
+  gap: 60px;
+}
+
+.row {
+  grid-area: row;
+}
+
+/* box perfil  */
+
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.user-img {
+  width: 128px;
+  height: 128px;
+
+  margin-bottom: 29px;
+}
+
+.user-name {
+  font-weight: 700;
+  font-size: 23px;
+  margin-bottom: 9px;
+}
+
+.user-profession {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* box social */
+
+.social {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.social .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social .item .social-link {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* box tec */
+
+.stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.stack-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-transform: uppercase;
+
+  background-color: var(--bg-techs);
+  border: none;
+  border-radius: 30px;
+
+  width: 86px;
+
+  font-weight: 700;
+  font-size: 10px;
+  padding: 7px 0;
+}
+
+/* box xp */
+
+.list {
+  padding-left: 62px;
+}
+
+.list li {
+  margin-bottom: 20px;
+}
+
+/* row */
+
+.projects,
+.posts {
+  background-color: var(--bg-cards);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px;
+}
+
+.projects .title {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+/* folder */
+
+.folder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.my-onix {
+  padding: 30px;
+  width: 100%;
+}
+
+.my-onix-header {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.my-onix-footer .stats,
+.my-onix-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.my-onix-content p {
+  margin-bottom: 49px;
+}
+
+.my-onix-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-onix-footer .stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.my-onix-footer .js {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.my-onix-footer .bol {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #e7de79;
+  border: 2px solid #837e9f;
+}
+
+/* post */
+
+.post {
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.post img {
+  height: 128px;
+  width: 128px;
+
+  border-radius: 50%;
+}
+
+.posts-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.posts-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.63px;
+  margin-bottom: 10px;
+}
+
+.posts-text .text-2 {
+  margin-bottom: 28px;
+}
+
+.posts-text .text-3 {
+  font-weight: 400;
+  margin-bottom: 11px;
+}
+
+.posts-text .hash {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
