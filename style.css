@@ -19,6 +19,7 @@ body {
   font-family: 'Merriweather Sans', sans-serif;
   background-color: var(--body-bg-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 .title {
@@ -76,6 +77,13 @@ body {
 
 .row {
   grid-area: row;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* box perfil  */
@@ -248,7 +256,7 @@ body {
 .post {
   padding: 30px;
   display: flex;
-  gap: 20px;
+
   cursor: pointer;
 }
 
@@ -278,11 +286,124 @@ body {
 
 .posts-text .text-3 {
   font-weight: 400;
-  margin-bottom: 11px;
+  margin-bottom: 20px;
 }
 
 .posts-text .hash {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+/* media */
+
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+    gap: 30px;
+  }
+
+  .box {
+    width: 95%;
+  }
+
+  .folder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .my-onix-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .projects {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 30px;
+    margin-right: 0;
+    padding: 30px;
+  }
+
+  .posts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .posts .title {
+    padding: 0;
+  }
+
+  .post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    padding: 20px;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .box-row {
+    width: 100%;
+  }
+
+  .post img {
+    margin-bottom: 30px;
+  }
+
+  .posts-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .posts-title {
+    text-align: center;
+  }
+
+  .posts-text .text-3 {
+    text-align: center;
+  }
+
+  .posts-text .hash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .xp,
+  .xp .subtitle,
+  .xp .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .xp .title {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .list {
+    list-style: none;
+    padding: 0;
+  }
 }
